@@ -1,10 +1,11 @@
 sudo: required
 dist: trusty
+services:
+- docker
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk9
-
+- oraclejdk8
+- oraclejdk9
 env:
   matrix:
   - COVERAGE=0.5 TARGET=ui
@@ -27,8 +28,10 @@ script:
 jobs:
   include:
     stage: deploy
+    before_deploy:
+      - ./gradlew -p ./monolithic/ui packageToContainer
     deploy:
       - provider: script
-        script: bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\" --password-stdin"
+        script: ./script/deploy.sh
         on:
-          all_branches: true
+          branches: master
