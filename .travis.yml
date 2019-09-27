@@ -30,6 +30,6 @@ jobs:
       - ./gradlew -p ./monolithic/ui packageToContainer
     deploy:
       - provider: script
-    script: script/deploy.js
+    script: ./script/deploy.js
     on:
       - all_branches: true
