@@ -21,12 +21,11 @@ env:
 install:
 - "./gradlew clean jar"
 script:
-- COVERAGE=$COVERAGE ./gradlew -p ./monolithic/$TARGET check
+- COVERAGE=${COVERAGE} ./gradlew -p ./monolithic/${TARGET} check
 deploy:
 - provider: script
   script:
-  - bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\"
-    --password-stdin"
+  - bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\" --password-stdin"
   - echo "WIP"
   on:
     all_branches: true
