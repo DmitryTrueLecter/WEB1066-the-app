@@ -32,4 +32,4 @@ jobs:
       - provider: script
         script: ./script/deploy.sh
         on:
-          all_branches: true
+          branches: master
