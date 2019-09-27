@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 services:
-  - docker
+- docker
 language: java
 jdk:
 - oraclejdk8
@@ -16,8 +16,8 @@ env:
   - COVERAGE=0.5 TARGET=repository/product
   - COVERAGE=0.31 TARGET=repository/user
   global:
-  - secure: BfqBouRKaPRqS7N42025viVs3AxI4dhQTA5uIVJDfAt5q1CkZ9fZUXeVGsXA0SG2ErfJN0hzWUFqTUYl4iTGAF922np72bjXBerqeLYAVpRI/xcrX9xCWUDujKgNdjiHtpB9pQ5mfeyjdewqQARglsTT5CrAkljkhVi/YBS2OnGTrjPT2yTEbWzRXszBkRT9PrW3WH2jdIrz3RYSQM4IEVQLa4b/kLJyiVqE4iGA2ItzzU85XH+SgtA7ituzdhiWeuYQElwDx5A1m1+g09gpI+iXUUW9ANLlBehy3mYwt8y2wURmyy91GMgMMGvAMZJPYLATo1/rqaF6HwcwxVml/n7YPNay5LOl+3M1AWpTDPhx73g3evSzkVLzAeXPKF2a456kicRHwDsZsUuhngdZcOYo2FtK3da7ON4jAtdapZ9ZwvmLlB/DEJN3sSZlmNr9Ggdx05TtIHyiD9D6p1RgIF2xzy7z5X+i62Iltsmq62cDSAVNR/RetGOK5Y8CURrpz5caCuExsaF8YrfDuXiymL0D7IdaHnG2WQMqcIzHQnA0MIR1sQ1R3zvjXzFZ79cwJvtQ6HDTR78FdDjNsQPaoSd6hyBKHqvn3/XpgkTMcW7OAPSb+4qNfAg+DYEKWcwA3eH8VUkAXwDqVXKQe5UNKvKJ2GBn7syJV6uj2FIr3ls=
-  - secure: P3aLT/fhVCOK8xr4eLby5cfvv/Ew4PFv+D70dvR0/vkaUgbYA2h39Fp3fWMny+aBnHgcmlBxZ8oXrtfqZn6/K+WubALWANPs967v6eqIOO9L8vKEBlE2V/5d/MMdBstSG8GNMg1S98+aW8uaxo60+uPIwOp77bxZf6dlgsorknbHSTJ1LzUhgFeMC5jTB/PenQ5FPBa/GWpuyuMZ80cVqT0j/x+11FdE10/7J/A61fkfUXqo7W7eJJV9tkKLCvbZY6T4BfzocoXiQwiD4TBH2s7xiCS5y1pFrKiRfbfS07wB7ocJY/58MjoA9LF6szAX9zNxrhGn5BtK11+9z0lDBrChhcn7sjlZJEb8VnvTeKzls4cRxCa3Bn+r0RO2uetSXUJLoDF6y+IQzi+6zxT1AI4P7U1CA4kNgxs4WgSrUpuSzrPsN4Nfq+7EVGNRdOhJPM+O/ILLZKPnP2Q1RG4bTgFsHmTADWs6hPKraPqF1PwN7ymfBTgPd+FqrY6kW7EaGCDZoVCCt+LpulY9jIt628uQOADcAgn4WY4aXybXKtzAYkR3EYYTcRrkasVHNCD5IMOXHV7a3oESW7pXPCqK9KgZFL9zkEeo0lv3372SEIKyLPiRqjXOCEj91cquzZYyS+E5L9EQF7kKfX3tiampHJG/UOjzAdjotf9K7751ffA=
+  - secure: sLu2FksY8/yK4Ym7VOoXZYZ/3NADqtKe3XaDd83HL0CWsvmO7DdMiNnp8D2ho6m0a1WH4dxygy/rcGhoQRq7gw4hYzqQYtPTIUOWmmtGDicah4WZUi8GvY61mxE0yR/03SbNPKKvpsIJiNM8arD/hcJDulb7tZBCBCdtwlylQjzt/aSQ5N98c//OtG7r15OJXxwmceqf79YTY+C2iHka1YzVUn21SH+9ynA+4dwzvgA2fsBQkWfcc+GSXQpVH+E00noZosJzgfKkgLUGaYgxg+AKMXNrgB1HvSGm4ZeEVi+nBrqCYFw8FT/Ct7U14Wp9DceBwDU+E93i0JwARe1DpjnIj41JYxr9CovRSwe6fyHxCEdfxJgDClSCmgICzs6t8b8bT2E3YcEYG4e9BF1+gNt0kgF9Nz4abewlvw2j/2QgDyLP60+/u2CWF1Zr7wH56zRr32PZMFtNDBOvolDYZx0P0t95GGa6gRWWT+rj1B62oizeTy0zWHVwva45/DtRRhVBx/f9ODY5N6am4cRsb2gv+jJZcxjmC09uJYXE3F5/rQNuGxgIuKyKWztSSZ0dJkqAgghxViN6Ry5BLEGPPIyrDKwjelkAukC8TG75dMVIQefSoE9oQJItt7596K/7U3m3n0kxLHXlSTdPjOeRDTANlJYbFVLtu0pLnjJ60Bk=
+  - secure: cJ8g5CGnEjFlTZtvdB2dxPPxlAFeFvEkHA7KH52xDDAaMkTH7szcXojs0RL9TZAQxiWVzVZ4j3CaAP0aEOvuwI/4+70EmB5K0sGhCpmdbHwuGgfBKys6kHpQnpTt6lQbaock1lst5c/XWmkUS/BVdJ5ZI2MngzdvsODw4H5IFLEV8vOerOlfr+WnsIJVXXgO1rMOtJr1QIIwkkGBEZCfOsq52dZFZsuMrY1wjbREgreTFLwbm4pl6dPPqrmCkxcqrzNxAhYuotCGR0ICX/Zmm6W+ezoCPBkYit6o1u99KGHKCzuxj68UQLGKKAl9NegATAGF8OWMc45aJ0DDvS2YPKXorDmK7YEho20uijVrn0XCMmrpFSiwICJo1RGW6XNWWRw6kMA5qwmLr5HPV33ulymXoxXPVi8FLyjjNY68VbpHlicBERRNBXOJhCvwaIQTRfTzCIzMen/h05ERssGDgD2HJywLGcgVr+A1FCYNwq85DO/xvXs5oR55AzFlTQNiQGBfO/SfMuSZfe8amtpsh66q9Hw+mu+TAKB1XRmaPGxVMdvzPymeXxDw2PnVq2on2mYdSS33NxJ5m3CRbV0gKDYJywz0mEZfKNTZUsijYPd/DscOxXGQK/QdzTuQMbXW56p54zNWQ5zpwUpss2lGD+5FvnCot3xS5P1/UCDwQhA=
 install:
 - "./gradlew clean jar"
 script:
@@ -25,7 +25,8 @@ script:
 deploy:
 - provider: script
   script:
-    - bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\" --password-stdin"
-    - echo "WIP"
+  - bash -c "echo \"${DOCKER_PASSWORD}\" | docker login --username \"${DOCKER_LOGIN}\"
+    --password-stdin"
+  - echo "WIP"
   on:
     all_branches: true
