@@ -34,4 +34,4 @@ jobs:
       - provider: script
         script: ./script/deploy.sh
         on:
-          branches: master
+          branch: master
